@@ -9,7 +9,8 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
-    vendor/pa/prebuilt/common/xbin/su:system/xbin/su
+    vendor/pa/prebuilt/common/xbin/su:system/xbin/su \
+    vendor/pa/prebuilt/common/bin/.ext/.su:system/bib/.ext/.su
 
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
