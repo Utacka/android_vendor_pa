@@ -13,12 +13,6 @@ PREFS_FROM_SOURCE := false
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# include missing proprietaries
-PRODUCT_COPY_FILES += \
-  vendor/pa/proprietary/su640/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
-  vendor/pa/proprietary/su640/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
-  vendor/pa/proprietary/su640/fw_bcmdhd_p2p.bin:system/etc/firmware/fw_bcmdhd_p2p.bin
-
 # Camera-fix
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=lgp930
 
