@@ -13,6 +13,10 @@ PREFS_FROM_SOURCE := false
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
+# include missing proprietaries
+PRODUCT_COPY_FILES += \
+  vendor/pa/proprietary/blue-common/sensors.default.so:system/lib/hw/sensors.default.so
+
 # Inherit CM device configuration
 $(call inherit-product, device/sony/mint/cm.mk)
 
